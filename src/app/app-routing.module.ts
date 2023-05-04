@@ -8,9 +8,14 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'cliente-add-edit',
     pathMatch: 'full'
   },
+  {
+    path: 'cliente-add-edit',
+    loadChildren: () => import('./cliente/cliente-add-edit/cliente-add-edit.module').then( m => m.ClienteAddEditPageModule)
+  },
+
 ];
 
 @NgModule({
