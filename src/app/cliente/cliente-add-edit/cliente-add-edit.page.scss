@@ -1,0 +1,16 @@
+ion-input{
+    color: #fff;
+}
+
+ion-input.has-focus {
+    color: #fff;
+}
+
+// ion-input {
+//     color: black;
+// }
+
+ion-item {
+    --inner-padding-end: 3px;
+    color: var(--ion-color-primary);
+}
